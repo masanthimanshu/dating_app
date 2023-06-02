@@ -14,6 +14,12 @@ class AppTheme {
         padding: const MaterialStatePropertyAll(
           EdgeInsets.all(15),
         ),
+        textStyle: const MaterialStatePropertyAll(
+          TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     ),
     appBarTheme: const AppBarTheme(
@@ -28,7 +34,7 @@ class AppTheme {
       ),
       iconTheme: IconThemeData(
         size: 24,
-        color: Colors.pink,
+        color: Colors.pinkAccent,
       ),
     ),
   );

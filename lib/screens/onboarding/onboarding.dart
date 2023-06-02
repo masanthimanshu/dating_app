@@ -1,4 +1,4 @@
-import 'package:dating_app/screens/home/home.dart';
+import 'package:dating_app/screens/login/login.dart';
 import 'package:flutter/material.dart';
 
 class OnBoarding extends StatelessWidget {
@@ -32,12 +32,20 @@ class OnBoarding extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 50),
-            const Text("Welcome Back"),
+            const Text(
+              "Welcome Back",
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.pinkAccent,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             const Padding(
               padding: EdgeInsets.all(20),
               child: Text(
-                "Users going through a vetting process to ensure you never match with bots. Users going through a vetting process to ensure you never match with bots.",
+                "Users going through a vetting process to ensure you never match with bots. Users going through a vetting process to ensure you never match with bots. Users going through a vetting process to ensure you never match with bots.",
                 textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.grey),
               ),
             ),
             Padding(
@@ -49,7 +57,7 @@ class OnBoarding extends StatelessWidget {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => const HomeScreen(),
+                        builder: (_) => const LoginScreen(),
                       ),
                     );
                   },
