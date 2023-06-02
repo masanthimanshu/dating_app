@@ -87,12 +87,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         validator: (value) {
                           if (value == null || value.isEmpty) {
                             Fluttertoast.showToast(msg: "Enter phone number");
-                            return;
+                            return "";
                           }
 
                           if (value.length < 10 || value.length > 10) {
                             Fluttertoast.showToast(msg: "Invalid phone number");
-                            return;
+                            return "";
                           }
 
                           return null;
